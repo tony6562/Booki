@@ -1,0 +1,264 @@
+/* Imported Raleway fonts, regular and bold from google */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* Base styling */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Sets the font in the whole body to be Raleway or sans-serif for a backup */
+body{
+    font-family: "Raleway", sans-serif;
+    max-width: 992px;
+    margin: auto;
+}
+
+/* Takes the underline out from anylinks and sets the font to a regular style */
+a{
+    text-decoration: none;
+    font-weight: 400;
+    
+}
+
+a:hover{
+    border-top: 3px solid #0065fc;
+    color: #0065fc;
+    padding-top: 14px;
+}
+
+a:active{
+    border-top: 3px solid #0065fc;
+    color: #0065fc;
+    padding-top: 14px;
+}
+
+header{
+    height: 40px;
+}
+
+#logo{
+    width: 100px;
+}
+nav{
+    padding: 2% 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+h2{
+    font-size: 14px;
+    margin-top: 40px;
+    margin-bottom: 1px;
+}
+
+h3{
+    font-size: 14px;
+    margin-left: 25px;
+    margin-top: -1;
+}
+p{
+    margin: 0;
+    font-size: 10px;
+    width: 250px;
+}
+
+form{
+    margin: 20px 0 20px 0px;
+}
+input{
+    display: inline-block;
+    font-size: 14px;
+}
+
+input[type="text"]{
+    height: 22px;   
+    border: 2px solid #f2f2f2;
+    outline: none;
+    padding: 0 5px;
+}
+
+input[type="submit"]{
+    position: relative;
+    left: -5px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    color: #fff;
+    background-color: #0065fc;
+    height: 26px;
+    cursor: pointer;
+}
+
+.fa-map-marker-alt{
+    position: relative;
+    background-color: #f2f2f2;
+    font-size: 12px;   
+    padding: 5px;
+    border-radius: 10px 0 0 10px;
+    border: 2px solid #f2f2f2;
+}
+
+.filters{
+    margin: 20px 0 20px 0px;
+}
+
+button {
+    margin-left: 15px;
+    border: #f2f2f2 2px solid;  /* Puts a border on with a solid color of light grey */
+    border-left: #beedff;       /* Change the color of the left border to match the button color */
+    border-radius: 30px;          /* Changes the button to have round corners */
+    background-color: white;    /* Change the color of the background of the button */
+    font-weight: bold;            /* Change the text of the button to bold */
+    padding: 0 15px 0 0;
+    cursor: pointer;
+}
+
+.fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog  {
+    color: #0065fc;             /* Changes the color of the icons */
+    background: #beedff;
+    border-radius: 50%;
+    border: 0px;
+    padding: 15px;  /* change the background size of the icon*/
+    margin-right: 15px;
+}
+
+.fa-info{
+    border: 2px solid #f2f2f2;
+    padding: 4px;
+    color: #0065fc;
+    border-radius: 50%;
+    font-size: 8px;
+}
+
+.img-top{
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+}
+
+.img-left{
+    border-radius: 15px 0 0 15px;
+    width: 50%;
+    height: 100px;
+    padding: 5px;
+}
+
+.img-activities{
+    box-sizing: border-box;
+    border-radius: 15px;
+    width: 300px;
+    height: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+.rating{
+    color: #0065fc;
+    font-size: 10px;
+    padding-left: 5px;
+}
+
+.grey-star{
+    color:  grey;
+}
+
+.container{
+    display: flex;
+}
+
+.container > div{
+    margin: 10px;
+}
+
+.accommodation{
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    padding: 5px;
+    width: 100%;
+    
+}
+
+.accommodation-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    background-color: #fff;
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+    border-radius: 15px;
+
+}
+
+.card-row{
+    display: flex;
+    width: 93%;
+    height: 100%;
+    
+    
+}
+
+.price{
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.most-popular{
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    width: 500px;
+    padding: 10px;
+    align-content: center;
+
+}
+
+.activities-container{
+    display:flex;
+}
+    
+
+#more{
+    color: #000;
+    background-color: #f2f2f2;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 25px;
+}
+
+.activities-img-container{
+    width: 25%;
+    margin: 20px 5px 20px 5px;
+}
+
+.img-activities{
+    border: #f2f2f2 solid 1px;
+    padding: 0;
+    height: 400px;
+    box-shadow: 2px 2px 2px 2px #f2f2f2;
+}
+
+.img-bottom{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    margin-left: 0;
+    height: 370px;
+}
+
+.img-text{
+    font-weight: 700;
+    text-align: left;
+    margin-left: 10px;
+}
